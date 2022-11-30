@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/truoctentacpham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tên tác phẩm: "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_below="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tentacpham"
+        android:text=""
+        android:layout_toRightOf="@+id/truoctentacpham"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/truocnoidung"
+        android:text="Nội dung tóm tắt: "
+        android:textSize="20sp"
+        android:layout_below="@+id/tentacpham"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noidung"
+        android:text=""
+        android:layout_below="@+id/truoctentacpham"
+        android:layout_toRightOf="@+id/truocnoidung"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>
